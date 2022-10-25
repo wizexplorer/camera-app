@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.back {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+}
+
+.gallery-cont {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgba(180, 208, 215, 0.488);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.media-cont {
+    height: 15rem;
+    width: 15rem;
+    border: 5px solid white;
+    background-color: lightgreen;
+    transition: transform 450ms ease;
+}
+
+.media-cont:hover {
+    transform: scale(1.106);
+    
+}
+
+.media {
+    height: calc(100% - 1rem);
+    background-color: orange;
+}
+
+video {
+    border-radius: 3px;
+}
+
+.media > * {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.action-btn-cont {
+    height: 1rem;
+    display: flex;
+
+}
+.action-btn {
+    /* height: 2rem; */
+    height: 100%;
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    content: none;
+}
+
+.download {
+    background-color: black;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.download:hover span{
+    opacity: 1;
+}
+
+.delete {
+    background-color: crimson;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.delete:hover span{
+    opacity: 1;
+}
+
+span {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+}
+
+
